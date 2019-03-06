@@ -1,10 +1,8 @@
 $(function () {
     var $content = $('#jsonContent');
 
-    var mediumName = "warrensbox"
-    // if (handle_name) {
-    //     mediumName = handle_name 
-    // }
+    var mediumName = "<PUT YOUR MEDIUM HANDLE NAME HERE>"
+
     var data = {  
         rss_url: 'https://medium.com/feed/@'+mediumName
     };
