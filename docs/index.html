@@ -2,39 +2,199 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <style>
+        .mainbox {
+            padding: 23px 0;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .col-centered {
+            float: none;
+            margin: 0 auto;
+        }
+
+        .profile_img {
+            padding-right: 20px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .u {
+            flex-grow: 1;
+        }
+
+        .dm {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .dn {
+            justify-content: flex-start;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .dr {
+            margin-left: 20px;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+        }
+
+        .dp {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: block;
+        }
+
+
+        /* img, svg {
+    vertical-align: middle;
+  } */
+
+        .bx {
+            fill: rgba(0, 0, 0, 0.84);
+            color: rgba(0, 0, 0, 0.84);
+            display: block;
+            letter-spacing: 0px;
+            font-size: 15.8px;
+            line-height: 20px;
+            font-style: normal;
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        .af {
+            fill: rgba(0, 0, 0, 0.54);
+            color: rgba(0, 0, 0, 0.54);
+            display: block;
+            letter-spacing: 0px;
+            font-size: 15.8px;
+            line-height: 20px;
+            font-style: normal;
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .dsbox {
+            margin-top: 38px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .dubox {
+            margin: auto;
+            max-width: 700px;
+            position: relative;
+        }
+
+        .dvbox {
+            /* padding-bottom: 30%; */
+        }
+
+        .bhbox {
+            height: auto;
+            left: 0;
+            top: 0;
+            /* position: absolute; */
+            width: 100%;
+        }
+
+        .eafont {
+            margin-bottom: -0.28em;
+            margin-top: 0.86em;
+            letter-spacing: -0.022em;
+            line-height: 1.12;
+            font-size: 23px;
+            /* padding-left: 20px;
+    padding-right: 20px; */
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.84);
+            font-style: normal;
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+        }
+
+        .blog-cont {
+            /* padding-top: 20px; */
+        }
+
+        .blog-cont p {
+            color: #67666a;
+            line-height: 22px;
+        }
+
+        .dsbox a:visited {
+            /* color:red; */
+            border-bottom-color: white !important;
+        }
+
+        a:visited {
+            /* color:red; */
+            /* border-bottom-color:white !important;  */
+        }
+
+        .dsbox a:hover {
+            color: #056797;
+            border-bottom-color: white !important;
+            text-decoration: none;
+        }
+
+        img {
+            vertical-align: bottom;
+            max-width: 100%;
+            height: auto;
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        .pt-page-current *,
+        .no-js .pt-page * {
+            height: auto;
+        }
+    </style>
 </head>
 
 <body class="bg-light">
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+            <img class="d-block mx-auto mb-4" src="https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png"
                 alt="" width="72" height="72">
-            <h2>Checkout form</h2>
-            <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form
-                group has a validation state that can be triggered by attempting to submit the form without completing
-                it.</p>
+                
+            <h2>Medium to HTML</h2>
+            <p class="lead">Below is an example of how you can embed your medium articles into your personal websites</p>
+            <!-- <div class="row"> -->
+                    <h3>How to get handle name?</h3>
+                    <img src="./handler.png" class="d-block mx-auto mb-4" alt="...">
+            <!-- </div> -->
+
+
+
         </div>
 
         <div class="d-flex justify-content-center">
-        <form class="card p-2 col-lg-4 col-md-4 col-sm-12">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Promo code">
-                <div class="input-group-append">
-                    <button type="submit" class="btn btn-secondary">Redeem</button>
+            <form class="card p-2 col-lg-4 col-md-4 col-sm-12" id="myForm">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Medium Handle Name. Ex: warrrensbox" name="handle_name" id="handle_name" >
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Get content</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
         </div>
         <div id="jsonContent"></div>
 
 
-        <div class="col-12 col-md-6">
+        <!-- <div class="col-12 col-md-6">
             <form id="myForm">
                 <div class="mb-3">
                     <label for="field0" class="d-inline-block mb-1">Medium Handle Name</label>
@@ -46,14 +206,10 @@
                 <button type="submit" class="btn btn-blue btn-medium f4">Submit</button>
 
             </form>
-        </div>
+        </div> -->
 
     </div>
     <script>
-
-
-
-
         window.addEventListener("load", function () {
             $(document).ready(function () {
                 console.log("ready!");
@@ -63,7 +219,6 @@
             function getData() {
                 var formData = new FormData(form);
                 var XHR = new XMLHttpRequest();
-                var url = 'https://falcon.warrensbox.com/form'
                 var obj = {}
 
                 for (var data of formData.entries()) {
@@ -79,10 +234,7 @@
                     //alert('Message sent!\n Now, check your email to see the imformation you sent!\n');
                 });
                 console.log(obj.handle_name)
-
-                XHR.open('POST', url);
-                $('#my_div').myfunction(obj.handle_name);
-                XHR.send(JSON.stringify(obj));
+                $('#jsonContent').getMedium(obj.handle_name);
             }
 
             var form = document.getElementById("myForm");
@@ -202,7 +354,6 @@
     </script>
 
 
-    <script src="medium.js"></script>
 </body>
 
 </html>
